@@ -18,7 +18,7 @@ class EnvironmentEnum(str, Enum):
     """
 
     PRODUCTION = "production"
-    LOCAL = "local"
+    DEVELOPMENT = "development"
 
 
 class GlobalConfig(BaseSettings):
@@ -34,7 +34,7 @@ class GlobalConfig(BaseSettings):
     ENVIRONMENT: EnvironmentEnum
     DEBUG: bool = False
     TESTING: bool = False
-    TIMEZONE: str = "CDT"
+    TIMEZONE: str = "UTC"
     # DB_USER: str = os.environ["DB_USER"]
     # DB_PWD: str = os.environ["DB_PWD"]
     # DB_HOST: str = os.environ["DB_HOST"]

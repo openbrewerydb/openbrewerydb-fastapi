@@ -41,7 +41,7 @@ For information on contributing to this project, please see the [contributing gu
 
 ## 🔗 Related
 
-- [Open Brewery DB Website & Documentation](https://github.com/chrisjm/openbrewerydb-gatsby)
+- [Open Brewery DB Website & Documentation](https://github.com/openbrewerydb/openbrewerydb-sveltekit)
 - [Open Brewery DB Dataset](https://github.com/openbrewerydb/openbrewerydb)
 
 ## 👾 Community
