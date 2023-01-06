@@ -44,7 +44,7 @@ class GlobalConfig(BaseSettings):
     # ] = f"postgresql://{DB_USER}:{DB_PWD}@{DB_HOST}:5432/{DB_NAME}"
     # DB_ECHO_LOG: bool = False
     # Api V1 prefix
-    API_V1_STR = "/api/v1"
+    API_V1_STR = "/v1"
 
     # @property
     # def async_database_url(self) -> Optional[str]:
@@ -65,13 +65,13 @@ class GlobalConfig(BaseSettings):
         case_sensitive = True
 
 
-class LocalConfig(GlobalConfig):
+class DevelopmentConfig(GlobalConfig):
     """
-    Local configurations
+    Development configurations
     """
 
     DEBUG: bool = True
-    ENVIRONMENT: EnvironmentEnum = EnvironmentEnum.LOCAL
+    ENVIRONMENT: EnvironmentEnum = EnvironmentEnum.DEVELOPMENT
 
 
 class ProdConfig(GlobalConfig):
@@ -92,8 +92,8 @@ class FactoryConfig:
         self.environment = environment
 
     def __call__(self) -> GlobalConfig:
-        if self.environment == EnvironmentEnum.LOCAL.value:
-            return LocalConfig()
+        if self.environment == EnvironmentEnum.DEVELOPMENT.value:
+            return DevelopmentConfig()
         return ProdConfig()
 
 

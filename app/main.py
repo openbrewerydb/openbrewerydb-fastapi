@@ -28,7 +28,7 @@ def get_application() -> FastAPI:
         description=settings.DESCRIPTION,
         debug=settings.DEBUG,
         redoc_url=None,
-        openapi_url="/api/v1/openapi.json",
+        openapi_url="/v1/openapi.json",
     )
 
     root_router = APIRouter()
