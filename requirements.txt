@@ -14,7 +14,7 @@ beautifulsoup4==4.10.0
 beniget==0.4.1
 black==22.12.0
 blinker==1.4
-bottle==0.12.19
+bottle==0.12.20
 bpytop==1.0.68
 Brotli==1.0.9
 certifi==2021.10.8
