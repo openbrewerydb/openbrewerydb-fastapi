@@ -10,7 +10,7 @@ The Open Brewery DB API server is a FastAPI REST-based API server connected to a
 
 ## 📦 Dependencies
 
-* Python 3.7
+- Python 3.10.6
 
 ## 🚀 Getting Started
 
@@ -20,20 +20,20 @@ TBD
 
 ## 🚛 Roadmap
 
-| Task | Complete? |
-| --- | --- |
-| Setup repo | ✅ |
-| README | ✅ |
-| Intial Unit/Request tests | |
-| Endpoint placeholders | |
-| Pydantic models | |
-| Update tests | |
-| DB Mocks | |
-| Query validation | |
-| Path validation | |
-| Sentry integration | |
-| Authentication | |
-| Rate-limiting | |
+| Task                      | Complete? |
+| ------------------------- | --------- |
+| Setup repo                | ✅        |
+| README                    | ✅        |
+| Intial Unit/Request tests |           |
+| Endpoint placeholders     |           |
+| Pydantic models           |           |
+| Update tests              |           |
+| DB Mocks                  |           |
+| Query validation          |           |
+| Path validation           |           |
+| Sentry integration        |           |
+| Authentication            |           |
+| Rate-limiting             |           |
 
 ## 🤝 Contributing
 
@@ -41,13 +41,13 @@ For information on contributing to this project, please see the [contributing gu
 
 ## 🔗 Related
 
-* [Open Brewery DB Website & Documentation](https://github.com/chrisjm/openbrewerydb-gatsby)
-* [Open Brewery DB Dataset](https://github.com/openbrewerydb/openbrewerydb)
+- [Open Brewery DB Website & Documentation](https://github.com/openbrewerydb/openbrewerydb-sveltekit)
+- [Open Brewery DB Dataset](https://github.com/openbrewerydb/openbrewerydb)
 
 ## 👾 Community
 
-* [Join the Newsletter](http://eepurl.com/dBjS0j)
-* [Join the Discord](https://discord.gg/SHtpdEN)
+- [Join the Newsletter](http://eepurl.com/dBjS0j)
+- [Join the Discord](https://discord.gg/SHtpdEN)
 
 ## 📫 Feedback
 
