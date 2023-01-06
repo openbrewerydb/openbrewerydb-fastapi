@@ -147,7 +147,7 @@ typing_extensions==4.2.0
 ubuntu-advantage-tools==27.12
 ufoLib2==0.13.1
 ufw==0.36.1
-ujson==5.2.0
+ujson==5.4.0
 unattended-upgrades==0.1
 unicodedata2==14.0.0
 urllib3==1.26.9
