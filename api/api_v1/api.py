@@ -2,7 +2,7 @@
 Import all routers together
 """
 from fastapi import APIRouter
-from app.api.api_v1.routes import healthcheck
+from api.api_v1.routes import healthcheck
 
 api_router = APIRouter()
 

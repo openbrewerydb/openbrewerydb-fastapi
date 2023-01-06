@@ -14,9 +14,24 @@ The Open Brewery DB API server is a FastAPI REST-based API server connected to a
 
 ## 🚀 Getting Started
 
+- Create a virtual environment
+  - `python3 -m venv venv`
+- Activate environment
+  - `./venv/bin/activate`
+    - You may also need to do `chmod +x ./venv/bin/activate && ./venv/bin/activate`
+- Install dependencies
+  - `pip3 install -r requirements.txt`
+- Run the tests
+  - `pytest`
+- Run the server
+  - `uvicorn main:app`
+
 ### Local Environement
 
-TBD
+`http://127.0.0.1:8000/` (HTML)
+`https://localhost:8000/v1/healthcheck` (JSON)
+`https://localhost:8000/v1/healthcheck`  (JSON)
+`https://localhost:8000/healthcheck`
 
 ## 🚛 Roadmap
 
