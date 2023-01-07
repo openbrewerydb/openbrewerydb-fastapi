@@ -17,8 +17,7 @@ The Open Brewery DB API server is a FastAPI REST-based API server connected to a
 - Create a virtual environment
   - `python3 -m venv venv`
 - Activate environment
-  - `./venv/bin/activate`
-    - You may also need to do `chmod +x ./venv/bin/activate && ./venv/bin/activate`
+  - `source ./venv/bin/activate`
 - Install dependencies
   - `pip3 install -r requirements.txt`
 - Run the tests
