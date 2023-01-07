@@ -37,7 +37,7 @@ The Open Brewery DB API server is a FastAPI REST-based API server connected to a
 | ------------------------- | --------- |
 | Setup repo                | ✅        |
 | README                    | ✅        |
-| Intial Unit/Request tests |           |
+| Initial Unit/Request tests | ✅        |
 | Endpoint placeholders     |           |
 | Pydantic models           |           |
 | Update tests              |           |
