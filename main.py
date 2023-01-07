@@ -9,8 +9,8 @@ from fastapi.templating import Jinja2Templates
 from fastapi import FastAPI
 from fastapi import APIRouter
 from fastapi import Request
-from app.core.config import settings
-from app.api.api_v1.api import api_router
+from core.config import settings
+from api.api_v1.api import api_router
 
 BASE_PATH = Path(__file__).resolve().parent
 TEMPLATES = Jinja2Templates(directory=str(BASE_PATH / "templates"))
