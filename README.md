@@ -26,12 +26,10 @@ The Open Brewery DB API server is a FastAPI REST-based API server connected to a
 - Run the server
   - `uvicorn main:app`
 
-### Local Environement
+### Endpoints
 
-`http://127.0.0.1:8000/` (HTML)
-`https://localhost:8000/v1/healthcheck` (JSON)
-`https://localhost:8000/v1/healthcheck`  (JSON)
-`https://localhost:8000/healthcheck`
+- `https://localhost:8000/` (HTML)
+- `https://localhost:8000/v1/healthcheck` (JSON)
 
 ## 🚛 Roadmap
 
