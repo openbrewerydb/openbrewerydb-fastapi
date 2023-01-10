@@ -3,48 +3,31 @@ FastAPI Pydantic schemas for a brewery
 """
 
 from pydantic import BaseModel
+from typing import Optional
+import datetime
 
 class BreweryBase(BaseModel):
     """
     Brewery base schema via Pydantic
     """
-    name: int
+
+    id: str
+    name: str
     brewery_type: str
-    street: str | None
-    address_2: str | None
-    address_3: str | None
-    city: str | None
-    state: str | None
-    county_province: str | None
-    postal_code: str | None
-    website_url: str | None
-    phone: str | None
-    county: str | None
-    longtitude: int | None
-    latitude: int | None
-
-# Properties to receive via API on creation
-class BreweryCreate(BreweryBase):
-    submitter_id: int
-
-# Properties to receive via API on update
-class BreweryUpdate(BreweryBase):
-    id: int
-
-class BreweryInDBBase(BreweryBase):
-    id: int
-    submitter_id: int
+    street: str
+    address_2: Optional[str]
+    address_3: Optional[str]
+    city: Optional[str]
+    state: Optional[str]
+    county_province: Optional[str]
+    postal_code: str
+    website_url: Optional[str]
+    phone: Optional[str]
+    country: str
+    longtitude: Optional[int]
+    latitude: Optional[int]
+    created_at: datetime.datetime
+    updated_at: datetime.datetime
 
     class Config:
         orm_mode = True
-
-# Additional properties stored in DB but not returned by API
-class BreweryInDB(BreweryInDBBase):
-    ...
-
-# Additional properties to return via API
-class Brewery(BreweryInDBBase):
-    ...
-
-class BrewerySearchResults(BaseModel):
-    results: list[Brewery]

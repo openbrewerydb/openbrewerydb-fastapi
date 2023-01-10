@@ -24,10 +24,10 @@ The Open Brewery DB API server is a FastAPI REST-based API server connected to a
   - `pytest`
 - Run the server
   - `uvicorn main:app`
-- Change the host to any connection
-  - `--host=0.0.0.0`
-- Change the port (8001 used as example)
-  - `--port=8001`
+  - Change the host to any connection
+    - `--host=0.0.0.0`
+  - Change the port (8001 used as example)
+    - `--port=8001`
 
 ### Endpoints
 
