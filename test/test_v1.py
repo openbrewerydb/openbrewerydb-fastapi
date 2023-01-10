@@ -3,7 +3,7 @@ from main import app
 
 client = TestClient(app)
 
-def test_healthcheck():
-    response = client.get("/healthcheck")
+def test_v1_root():
+    response = client.get("/v1")
     assert response.status_code == 200
-    assert response.json() == {"status": "ok"}
+    assert response.json() == {"version": 1}
