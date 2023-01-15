@@ -6,6 +6,7 @@ from pydantic import BaseModel
 from typing import Optional
 import datetime
 
+
 class BreweryBase(BaseModel):
     """
     Brewery base schema via Pydantic

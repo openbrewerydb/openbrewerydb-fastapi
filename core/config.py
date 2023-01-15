@@ -1,6 +1,7 @@
 """
 Environments and configuration file
 """
+
 import logging
 import os
 import secrets
