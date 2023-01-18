@@ -12,3 +12,8 @@ def test_v1_root():
     response = client.get("/v1")
     assert response.status_code == 200
     assert response.json() == {"version": 1}
+
+def test_breweries():
+    response = client.get("/v1/breweries")
+    assert response.status_code == 200
+    assert response.json() == {"endpoint": "breweries"}
