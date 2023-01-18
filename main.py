@@ -1,6 +1,7 @@
 """
 FastAPI main application
 """
+
 import os
 import time
 from pathlib import Path
@@ -17,10 +18,12 @@ os.environ["TZ"] = settings.TIMEZONE
 
 time.tzset()
 
+
 def get_application() -> FastAPI:
     """
     Defines the FastAPI Object as an application
     """
+
     application = FastAPI(
         title=settings.TITLE,
         description=settings.DESCRIPTION,
@@ -44,6 +47,7 @@ def get_application() -> FastAPI:
         """
         Root GET
         """
+
         return RedirectResponse("https://www.openbrewerydb.org/")
 
     @root_router.get("/healthcheck", status_code=200)
@@ -51,11 +55,13 @@ def get_application() -> FastAPI:
         """
         Ping style health check
         """
+
         return {"status": "ok"}
 
     application.include_router(api_v1_router, prefix=settings.API_V1_STR)
     application.include_router(root_router)
 
     return application
+
 
 app = get_application()

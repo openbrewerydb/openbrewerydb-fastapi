@@ -1,6 +1,7 @@
 """
 Brewery SQL model
 """
+
 from sqlalchemy import Integer, String, Column, Float, DateTime
 
 from app.db.base_class import Base
