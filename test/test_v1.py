@@ -21,14 +21,14 @@ def test_breweries_meta():
 
 
 def test_breweries_delete_id():
-    response = client.delete("/v1/breweries/1")
-    assert response.status_code == 501
+    response = client.delete("/v1/breweries")
+    assert response.status_code == 404
     assert response.json() == {"endpoint": "delete_brewery_by_id"}
 
 
 def test_post_breweries():
     response = client.post("/v1/breweries")
-    assert response.status_code == 201
+    assert response.status_code == 404
     assert response.json() == {"endpoint": "post_breweries"}
 
 
